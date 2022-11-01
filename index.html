@@ -1,311 +1,246 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-
-  
-  <title>ElemLoenoptal的个人博客</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+<!DOCTYPE html><html lang="en" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>ElemLoenoptal的个人博客</title><meta name="author" content="John Doe"><meta name="copyright" content="John Doe"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
 <meta property="og:title" content="ElemLoenoptal的个人博客">
 <meta property="og:url" content="http://example.com/index.html">
 <meta property="og:site_name" content="ElemLoenoptal的个人博客">
 <meta property="og:locale" content="en_US">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
 <meta property="article:author" content="John Doe">
 <meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="ElemLoenoptal的个人博客" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="http://example.com/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.min.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: 'Copy successfully',
+    error: 'Copy error',
+    noSupport: 'The browser does not support'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: 'Just',
+    min: 'minutes ago',
+    hour: 'hours ago',
+    day: 'days ago',
+    month: 'months ago'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'ElemLoenoptal的个人博客',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-11-01 09:17:48'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
-<meta name="generator" content="Hexo 5.4.2"></head>
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">ElemLoenoptal的个人博客</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="Search"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-algorithm" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/10/30/algorithm/" class="article-date">
-  <time datetime="2022-10-30T00:57:43.031Z" itemprop="datePublished">2022-10-30</time>
-</a>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/10/30/algorithm/">基本五种排序</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h3 id="冒泡排序"><a href="#冒泡排序" class="headerlink" title="冒泡排序"></a>冒泡排序</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//冒泡排序  </span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> _CRT_SECURE_NO_WARNINGS</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="keyword">constexpr</span> <span class="type">int</span> N = <span class="number">110</span>;</span><br><span class="line"><span class="type">int</span> b[N];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">Bubble</span><span class="params">(<span class="type">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"></span><br><span class="line"> <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++)</span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> j = i ; j &lt; n; j++)</span><br><span class="line">   <span class="keyword">if</span> (b[j] &lt; b[i]) <span class="built_in">swap</span>(b[j], b[i]);<span class="comment">//升序</span></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"> <span class="type">int</span> n;</span><br><span class="line"> cin &gt;&gt; n; </span><br><span class="line"> <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;b[i]);</span><br><span class="line"></span><br><span class="line"> <span class="built_in">Bubble</span>(n);</span><br><span class="line"></span><br><span class="line"> <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, b[i]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="选择排序"><a href="#选择排序" class="headerlink" title="选择排序"></a>选择排序</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//选择排序 //SelectSort 每次将当前元素替换为后面最小的元素</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> _CRT_SECURE_NO_WARNINGS</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="keyword">constexpr</span> <span class="type">int</span> N = <span class="number">110</span>;</span><br><span class="line"><span class="type">int</span> s[N]; <span class="comment">//Selection</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">Selection</span><span class="params">(<span class="type">int</span> n)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"> <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; N; i++)<span class="comment">//遍历</span></span><br><span class="line"> &#123;</span><br><span class="line">  <span class="type">int</span> min = i;<span class="comment">//待定</span></span><br><span class="line">  <span class="keyword">for</span> (<span class="type">int</span> j = i + <span class="number">1</span>; j &lt; n; j++)<span class="comment">//遍历从i+1开始最小的数</span></span><br><span class="line">     <span class="keyword">if</span> (s[j] &lt; s[min]) min = j;<span class="comment">//遍历后，当前min就是最小数的下标</span></span><br><span class="line">                               <span class="comment">//如果一直没变过，说明待定那个就是最小的</span></span><br><span class="line"></span><br><span class="line">  <span class="built_in">swap</span>(s[i], s[min]);<span class="comment">//交换，如果此时i == min ，那就说明当前那个就是最小的</span></span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"> <span class="type">int</span> n;</span><br><span class="line"> cin &gt;&gt; n;</span><br><span class="line"> <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;s[i]);</span><br><span class="line"></span><br><span class="line"> <span class="built_in">Selection</span>(n);</span><br><span class="line"></span><br><span class="line"> <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, s[i]);</span><br><span class="line"> <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="归并排序"><a href="#归并排序" class="headerlink" title="归并排序"></a>归并排序</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//归并排序  稳定  </span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> _CRT_SECURE_NO_WARNINGS</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"></span><br><span class="line"><span class="keyword">constexpr</span> <span class="type">int</span> N = <span class="number">110</span>;</span><br><span class="line"><span class="type">int</span> m[N] , tmp[N];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">merge</span><span class="params">(<span class="type">int</span> m[], <span class="type">int</span> l, <span class="type">int</span> r)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"> <span class="keyword">if</span> (l &gt;= r) <span class="keyword">return</span>;</span><br><span class="line"></span><br><span class="line"> <span class="type">int</span> mid = l + r &gt;&gt; <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"> <span class="built_in">merge</span>(m, l, mid);</span><br><span class="line"> <span class="built_in">merge</span>(m, mid + <span class="number">1</span>, r);</span><br><span class="line"></span><br><span class="line"> <span class="type">int</span> k = <span class="number">0</span> , i = l , j = mid + <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line"> <span class="keyword">while</span> (i &lt;= mid &amp;&amp; j &lt;= r)</span><br><span class="line">  <span class="comment">//开始争宠，两边的头谁小谁先进tmp</span></span><br><span class="line">  <span class="keyword">if</span> (m[i] &lt;= m[j]) tmp[k++] = m[i++];</span><br><span class="line">  <span class="keyword">else</span>              tmp[k++] = m[j++];</span><br><span class="line"></span><br><span class="line"> <span class="comment">//开始找刚刚争宠后两块中，剩余的部分，没有剩余的就不执行while</span></span><br><span class="line"> <span class="keyword">while</span> (i &lt;= mid) tmp[k++] = m[i++];</span><br><span class="line"> <span class="keyword">while</span> (j &lt;= r)   tmp[k++] = m[j++];</span><br><span class="line"></span><br><span class="line"> <span class="comment">//开始把高贵的tmp里面的数据倒入m</span></span><br><span class="line"> <span class="comment">//为什么i从l开始？因为从n个数据细分到一个，然后合并后，再往上合并，会碰见之前合并过的？</span></span><br><span class="line"> <span class="comment">//也就是说之前已经有序了，前面的就不用管了？</span></span><br><span class="line"> <span class="comment">//因为tmp的下标k每次都是0开始，所以会覆盖之前保存的,而且之前的K必定小于之后的K，所以不会出现旧K &gt; 新K</span></span><br><span class="line"> <span class="comment">//这里是l 不是 1  ， l 和 r 在这个函数里面始终没有变过</span></span><br><span class="line"> <span class="keyword">for</span> (<span class="type">int</span> i = l, j = <span class="number">0</span>; i &lt;= r; i++, j++) m[i] = tmp[j];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"> <span class="type">int</span> n; </span><br><span class="line"> cin &gt;&gt; n;</span><br><span class="line"> <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;m[i]);</span><br><span class="line"></span><br><span class="line"> <span class="built_in">merge</span>(m, <span class="number">0</span>, n - <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line"> <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span> , m[i]);</span><br><span class="line">  <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-<h3 id="快速排序"><a href="#快速排序" class="headerlink" title="快速排序"></a>快速排序</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//快排，从小到大</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> _CRT_SECURE_NO_WARNINGS</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="type">const</span> <span class="type">int</span> N = <span class="number">100</span>;</span><br><span class="line"><span class="type">int</span> q[N];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">quick_sort</span><span class="params">(<span class="type">int</span> q[] , <span class="type">int</span> l , <span class="type">int</span> r)</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"> <span class="keyword">if</span> (l &gt;= r) <span class="keyword">return</span>;</span><br><span class="line"> <span class="type">int</span> x = q[l + r &gt;&gt; <span class="number">1</span>], i = l - <span class="number">1</span>, j = r + <span class="number">1</span>;</span><br><span class="line"> <span class="keyword">while</span> (i &lt; j)</span><br><span class="line"> &#123;</span><br><span class="line">  <span class="keyword">do</span> i++; <span class="keyword">while</span> (q[i] &lt; x);</span><br><span class="line">  <span class="keyword">do</span> j--; <span class="keyword">while</span> (q[j] &gt; x);</span><br><span class="line">  <span class="keyword">if</span> (i &lt; j) <span class="built_in">swap</span>(q[i], q[j]);</span><br><span class="line"></span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line"> <span class="built_in">quick_sort</span>(q, l, j);</span><br><span class="line"> <span class="built_in">quick_sort</span>(q, j + <span class="number">1</span>, r);</span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"> <span class="type">int</span> n;</span><br><span class="line"> </span><br><span class="line"> cin &gt;&gt; n;</span><br><span class="line"> <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;q[i]);</span><br><span class="line"></span><br><span class="line"> <span class="built_in">quick_sort</span>(q, <span class="number">0</span> , n - <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line"> <span class="keyword">for</span> (<span class="type">int</span> j = <span class="number">0</span>; j &lt; n; j++) <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>,q[j] );</span><br><span class="line"> <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-
-<h3 id="插入排序"><a href="#插入排序" class="headerlink" title="插入排序"></a>插入排序</h3><figure class="highlight cpp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//插入排序</span></span><br><span class="line"><span class="meta">#<span class="keyword">define</span> _CRT_SECURE_NO_WARNINGS</span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="meta">#<span class="keyword">include</span><span class="string">&lt;algorithm&gt;</span></span></span><br><span class="line"></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> std;</span><br><span class="line"><span class="keyword">constexpr</span> <span class="type">int</span> N = <span class="number">110</span>;</span><br><span class="line"><span class="type">int</span> in[N];</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="type">void</span> <span class="title">insert</span><span class="params">(<span class="type">int</span> n)</span><span class="comment">//每次将当前元素插入到前面已经排好序的元素中【依次比较前面已经插好的数】</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"> <span class="comment">//k , temp 放在for外定义防止重复定义造成栈浪费</span></span><br><span class="line"> <span class="type">int</span> k;<span class="comment">//记录当前要插入的元素的下标</span></span><br><span class="line"> <span class="type">int</span> temp;<span class="comment">//记录当前要插入的元素的值</span></span><br><span class="line"></span><br><span class="line"> <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">1</span>; i &lt; n; i++)<span class="comment">//默认第一个有序，所以从1开始，当然也会判断0那个位置和1的位置的数值关系</span></span><br><span class="line"> &#123;</span><br><span class="line">  k = i, temp = in[k];</span><br><span class="line">  <span class="type">int</span> j = i - <span class="number">1</span>;</span><br><span class="line"></span><br><span class="line">  <span class="keyword">while</span> ((j &gt;= <span class="number">0</span>) &amp;&amp; (in[j] &gt; temp))<span class="comment">//类似于找到合适位置前，未排好序的元素往后面挤，然后找到后将当前temp给放到合适位置 </span></span><br><span class="line">  &#123;</span><br><span class="line"></span><br><span class="line">   in[j + <span class="number">1</span>] = in[j];</span><br><span class="line">   k = j;</span><br><span class="line">   j--;</span><br><span class="line">  &#125;</span><br><span class="line">  in[k] = temp;</span><br><span class="line"> &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"><span class="function"><span class="type">int</span> <span class="title">main</span><span class="params">()</span></span></span><br><span class="line"><span class="function"></span>&#123;</span><br><span class="line"> <span class="type">int</span> n;</span><br><span class="line"> cin &gt;&gt; n;</span><br><span class="line"> <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) <span class="built_in">scanf</span>(<span class="string">&quot;%d&quot;</span>, &amp;in[i]);</span><br><span class="line"></span><br><span class="line"> <span class="built_in">insert</span>(n);</span><br><span class="line"></span><br><span class="line"> <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; n; i++) <span class="built_in">printf</span>(<span class="string">&quot;%d &quot;</span>, in[i]);</span><br><span class="line"> </span><br><span class="line"> <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/10/30/algorithm/" data-id="cl9upju3j00018igfbtce3zae" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.2"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">6</div></a></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">ElemLoenoptal的个人博客</a></span><div id="menus"><div class="menus_items"><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> Tags</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> Categories</span></a></div></div><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">ElemLoenoptal的个人博客</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2022/11/01/2022_1101_lc/" title="1662. 检查两个字符串数组是否相等【简单】"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="1662. 检查两个字符串数组是否相等【简单】"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/11/01/2022_1101_lc/" title="1662. 检查两个字符串数组是否相等【简单】">1662. 检查两个字符串数组是否相等【简单】</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-11-01T00:45:33.994Z" title="Created 2022-11-01 08:45:33">2022-11-01</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/leetcode%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/">leetcode每日一题</a></span></div><div class="content">1662. 检查两个字符串数组是否相等【简单】原题链接
+题目描述给你两个字符串数组 word1 和 word2 。如果两个数组表示的字符串相同，返回 true ；否则，返回 false 。
+数组表示的字符串 是由数组中的所有元素 按顺序 连接形成的字符串。
+ 
+示例 1：
+输入：word1 = [“ab”, “c”], word2 = [“a”, “bc”]输出：true解释：word1 表示的字符串为 “ab” + “c” -&gt; “abc”word2 表示的字符串为 “a” + “bc” -&gt; “abc”两个字符串相同，返回 true示例 2：
+输入：word1 = [“a”, “cb”], word2 = [“ab”, “c”]输出：false示例 3：
+输入：word1  = [“abc”, “d”, “defg”], word2 = [“abcddefg”]输出：true
+ 
+提示：
+1 &lt;= word1.length, word2.length &lt;= 1031 &lt;= word1[i].length, word2[i].length &lt;= 1 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/10/31/zone/" title="杂物间"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="杂物间"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/10/31/zone/" title="杂物间">杂物间</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-10-31T04:26:27.118Z" title="Created 2022-10-31 12:26:27">2022-10-31</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%9D%82%E7%89%A9%E9%97%B4/">杂物间</a></span></div><div class="content">1return value optimization 省一个copy/mov构造链接返回值优化（Return value optimization，缩写为RVO）是C++的一项编译优化技术，即删除保持函数返回值的临时对象。这可能会省略两次复制构造函数，即使复制构造函数有副作用。典型地，当一个函数返回一个对象实例，一个临时对象将被创建并通过复制构造函数把目标对象复制给这个临时对象。C++标准允许省略这些复制构造函数，即使这导致程序的不同行为，即使编译器把两个对象视作同一个具有副作用。
+RVO机制，将返回的类copy一个类的副本对象来保存返回的临时对象，就会调用一次临时构造函数，一次copy，一次析构。而通过c++编译器优化后，一些VS系列，则会以一次构造函数来来代替这个临时构造和析构。节省了系统资源
+2   static函数目的是让static修饰的函数只在本地文件可见  inline函数的目的是解决程序中函数调用的效率问题，也是用内联取代了宏定义（函数传参比宏方便
+3 static inline联合链接
+4 关于inline  1.inline函数其实是跟宏定义类似,不存在所谓的函数入 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/10/31/life/" title="风景"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="风景"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/10/31/life/" title="风景">风景</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-10-31T01:35:56.498Z" title="Created 2022-10-31 09:35:56">2022-10-31</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E9%A3%8E%E6%99%AF/">风景</a></span></div><div class="content"></div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/10/31/2022_1031_lc/" title="481. 神奇字符串【中等】"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="481. 神奇字符串【中等】"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/10/31/2022_1031_lc/" title="481. 神奇字符串【中等】">481. 神奇字符串【中等】</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-10-31T01:35:40.434Z" title="Created 2022-10-31 09:35:40">2022-10-31</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/leetcode%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/">leetcode每日一题</a></span></div><div class="content">481. 神奇字符串原题链接
+题目描述神奇字符串 s 仅由 ‘1’ 和 ‘2’ 组成，并需要遵守下面的规则：
+神奇字符串 s 的神奇之处在于，串联字符串中 ‘1’ 和 ‘2’ 的连续出现次数可以生成该字符串。s 的前几个元素是 s = “1221121221221121122……” 。如果将 s 中连续的若干 1 和 2 进行分组，可以得到 “1 22 11 2 1 22 1 22 11 2 11 22 ……” 。每组中 1 或者 2 的出现次数分别是 “1 2 2 1 1 2 1 2 2 1 2 2 ……” 。上面的出现次数正是 s 自身。
+给你一个整数 n ，返回在神奇字符串 s 的前 n 个数字中 1 的数目。
+思路1.先理解如何变1和2相互变换，利用异或   1234567/*11 = 301 = 110 = 2*///如何从 1变成2？   那就1^3//如何从 2变成1?    那就2^3
+2.思路1.先创建字符串 &quot;122&quot;进行初始化;
+2.定义哨兵sentry = 3 ，用来判断加什么数字
+3.循环，real_pos是当前真实的s的size;
+4.定 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/10/31/poem1/" title="诗词摘抄"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="诗词摘抄"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/10/31/poem1/" title="诗词摘抄">诗词摘抄</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-10-31T01:32:57.374Z" title="Created 2022-10-31 09:32:57">2022-10-31</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E8%AF%97%E8%AF%8D/">诗词</a></span></div><div class="content">1.流月挥金戈惊风折寒木 ————寇泚《度涂山》
+2.所谓过则勿惮改————《论语·学而篇》
+</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/10/30/destruct_order/" title="析构顺序"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="析构顺序"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/10/30/destruct_order/" title="析构顺序">析构顺序</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-10-30T09:48:24.061Z" title="Created 2022-10-30 17:48:24">2022-10-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/cpp%E5%9F%BA%E7%A1%80/">cpp基础</a></span></div><div class="content">1.析构函数析构顺序12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879#include &lt;iostream&gt;using namespace std;class base&#123;public :    base() &#123; cout &lt;&lt; &quot;调用基类构造函数&quot; &lt;&lt; endl; &#125;    ~base() &#123; cout &lt;&lt; endl; cout &lt;&lt;&quot;调用基类析构函数\t&quot; &lt;&lt; &quot;析构的是d&quot; &lt;&lt; b;    &#125;    int b;&#125;;class derive : public  base&#123;public:    derive() &#123 ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/10/30/VirtualFunction/" title="虚函数整理"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="虚函数整理"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/10/30/VirtualFunction/" title="虚函数整理">虚函数整理</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-10-30T02:25:08.073Z" title="Created 2022-10-30 10:25:08">2022-10-30</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/cpp%E5%9F%BA%E7%A1%80/">cpp基础</a></span></div><div class="content">1.什么是虚函数？在哪里定义的？1.1 在面向对象的C++语言中，虚函数（virtual function）是一个非常重要的概念
+1.2 虚函数是指一个类中你希望重载的成员函数 ，当你用一个 基类指针或引用 指向一个继承类对象的时候，调用一个虚函数时, 实际调用的是继承类的版本
+2.定义or声明虚函数时候要注意些什么？   2.1 必须首先在基类中定义虚函数，并赋予virtual关键字
+   2.2 虚函数必须是其所在类的成员函数，而不能是友元函数，也不能是静态成员函数 ,因为虚函数调用要靠特定的对象来决定该激活哪个函数。
+   2.3 内联函数不能是虚函数  因为内联函数是不能在运行中动态确定其位置的。即使虚函数在类的内部定义，编译时仍将其看做非内联的
+   2.4 构造函数不能是虚函数，但是析构函数可以是虚函数，而且通常说明为虚函数。   1234567891011class base&#123;     public :   virtual base() ; //直接报错，构造函数不能是虚函数   virtual ~base() ;//可以，析构函数可以是虚函数   virtua ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/10/30/algorithm/" title="基本五种排序"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="基本五种排序"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/10/30/algorithm/" title="基本五种排序">基本五种排序</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-10-30T00:57:43.031Z" title="Created 2022-10-30 08:57:43">2022-10-30</time></span></div><div class="content">冒泡排序123456789101112131415161718192021222324252627//冒泡排序  #define _CRT_SECURE_NO_WARNINGS#include&lt;iostream&gt;#include&lt;algorithm&gt;using namespace std;constexpr int N = 110;int b[N];void Bubble(int n)&#123; for (int i = 0; i &lt; n; i++)  for (int j = i ; j &lt; n; j++)   if (b[j] &lt; b[i]) swap(b[j], b[i]);//升序&#125;int main()&#123; int n; cin &gt;&gt; n;  for (int i = 0; i &lt; n; i++) scanf(&quot;%d&quot;, &amp;b[i]); Bubble(n); for (int i = 0; i &lt; n; i++) printf(&quot;%d &quot;, b[ ...</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/10/28/weather/" title="一些城市的极端数据"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="一些城市的极端数据"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/10/28/weather/" title="一些城市的极端数据">一些城市的极端数据</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">Created</span><time datetime="2022-10-28T07:58:20.657Z" title="Created 2022-10-28 15:58:20">2022-10-28</time></span><span class="article-meta"><span class="article-meta-separator">|</span><i class="fas fa-inbox"></i><a class="article-meta__categories" href="/categories/%E6%B0%94%E8%B1%A1/">气象</a></span></div><div class="content">
 
 
-  
-    <article id="post-city" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/10/28/city/" class="article-date">
-  <time datetime="2022-10-28T07:58:20.657Z" itemprop="datePublished">2022-10-28</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/10/28/city/">一些城市的极端数据</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <table>
-<thead>
-<tr>
-<th>城市</th>
-<th>极端最高气温</th>
-<th>极端最低气温</th>
-<th>极端低温最高值</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>重庆</td>
-<td>43.7(2022.8.17)</td>
-<td>-1.8</td>
-<td>34.9(2022.8.19 , 2022.8.25)</td>
-</tr>
-<tr>
-<td>杭州</td>
-<td>41.8(2022.8.14)</td>
-<td>-9.6</td>
-<td>31.3(2022.8.16)(2022.8.20的31.5被傍晚对流鸭毁)</td>
-</tr>
-<tr>
-<td>上海</td>
-<td>40.9</td>
-<td>-10.1</td>
-<td>~</td>
-</tr>
-<tr>
-<td>福州</td>
-<td>41.9</td>
-<td>~</td>
-<td>29.8(2022-8-23)</td>
-</tr>
-<tr>
-<td>沈阳</td>
-<td>38.4(2018.08.02)</td>
-<td>~</td>
-<td>~</td>
-</tr>
-<tr>
-<td>南宁</td>
-<td>40.4(1958-05-09)</td>
-<td>~</td>
-<td>~</td>
-</tr>
-<tr>
-<td>郑州</td>
-<td>43.0(1966.07.19)</td>
-<td>~</td>
-<td>~</td>
-</tr>
-<tr>
-<td>乌鲁木齐</td>
-<td>42.1(1973.08.01)</td>
-<td>~</td>
-<td>~</td>
-</tr>
-<tr>
-<td>西安</td>
-<td>42.9(2006.06.17)</td>
-<td>~</td>
-<td>~</td>
-</tr>
-<tr>
-<td>广州</td>
-<td>39.1(2004.07.1)</td>
-<td>~</td>
-<td>~</td>
-</tr>
-</tbody></table>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2022/10/28/city/" data-id="cl9upju3n00038igf6w5shzkh" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/10/">October 2022</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2022/10/30/algorithm/">基本五种排序</a>
-          </li>
-        
-          <li>
-            <a href="/2022/10/28/city/">一些城市的极端数据</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2022 John Doe<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
+城市
+极端最高气温
+极端最低气温
+极端低温最高值
 
 
 
+重庆
+43.7(2022.8.17)
+-1.8
+34.9(2022.8.19(仅三分钟下线35) , 2022.8.25)
 
-<script src="/js/script.js"></script>
+
+杭州
+41.8(2022.8.14)
+-9.6
+31.3(2022.8.16)(2022.8.20的31.5被傍晚对流鸭毁)
 
 
+上海
+40.9
+-10.1
+~
 
 
-  </div>
-</body>
-</html>
+福州
+41.9
+~
+29.8(2022-8-23)
+
+
+沈阳
+38.4(2018.08.02)
+~
+~
+
+
+南宁
+40.4(1958-05-09)
+~
+~
+
+
+郑州
+43.0(1966.07.19)
+~
+~
+
+
+乌鲁木齐
+42.1(1973.08.01)
+~
+~
+
+
+西安
+42.9(2006.06.17)
+~
+~
+
+
+广州
+39.1(2004.07.1)
+~
+~
+
+
+</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">John Doe</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">Articles</div><div class="length-num">9</div></a><a href="/tags/"><div class="headline">Tags</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">Categories</div><div class="length-num">6</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>Announcement</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>Recent Post</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/11/01/2022_1101_lc/" title="1662. 检查两个字符串数组是否相等【简单】"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="1662. 检查两个字符串数组是否相等【简单】"/></a><div class="content"><a class="title" href="/2022/11/01/2022_1101_lc/" title="1662. 检查两个字符串数组是否相等【简单】">1662. 检查两个字符串数组是否相等【简单】</a><time datetime="2022-11-01T00:45:33.994Z" title="Created 2022-11-01 08:45:33">2022-11-01</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/31/zone/" title="杂物间"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="杂物间"/></a><div class="content"><a class="title" href="/2022/10/31/zone/" title="杂物间">杂物间</a><time datetime="2022-10-31T04:26:27.118Z" title="Created 2022-10-31 12:26:27">2022-10-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/31/life/" title="风景"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="风景"/></a><div class="content"><a class="title" href="/2022/10/31/life/" title="风景">风景</a><time datetime="2022-10-31T01:35:56.498Z" title="Created 2022-10-31 09:35:56">2022-10-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/31/2022_1031_lc/" title="481. 神奇字符串【中等】"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="481. 神奇字符串【中等】"/></a><div class="content"><a class="title" href="/2022/10/31/2022_1031_lc/" title="481. 神奇字符串【中等】">481. 神奇字符串【中等】</a><time datetime="2022-10-31T01:35:40.434Z" title="Created 2022-10-31 09:35:40">2022-10-31</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/10/31/poem1/" title="诗词摘抄"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="诗词摘抄"/></a><div class="content"><a class="title" href="/2022/10/31/poem1/" title="诗词摘抄">诗词摘抄</a><time datetime="2022-10-31T01:32:57.374Z" title="Created 2022-10-31 09:32:57">2022-10-31</time></div></div></div></div><div class="card-widget card-categories"><div class="item-headline">
+            <i class="fas fa-folder-open"></i>
+            <span>Categories</span>
+            
+            </div>
+            <ul class="card-category-list" id="aside-cat-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/cpp%E5%9F%BA%E7%A1%80/"><span class="card-category-list-name">cpp基础</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/leetcode%E6%AF%8F%E6%97%A5%E4%B8%80%E9%A2%98/"><span class="card-category-list-name">leetcode每日一题</span><span class="card-category-list-count">2</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%9D%82%E7%89%A9%E9%97%B4/"><span class="card-category-list-name">杂物间</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E6%B0%94%E8%B1%A1/"><span class="card-category-list-name">气象</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E8%AF%97%E8%AF%8D/"><span class="card-category-list-name">诗词</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/%E9%A3%8E%E6%99%AF/"><span class="card-category-list-name">风景</span><span class="card-category-list-count">1</span></a></li>
+            </ul></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>Archives</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/11/"><span class="card-archive-list-date">November 2022</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/10/"><span class="card-archive-list-date">October 2022</span><span class="card-archive-list-count">8</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>Info</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">Article :</div><div class="item-count">9</div></div><div class="webinfo-item"><div class="item-name">UV :</div><div class="item-count" id="busuanzi_value_site_uv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">PV :</div><div class="item-count" id="busuanzi_value_site_pv"><i class="fa-solid fa-spinner fa-spin"></i></div></div><div class="webinfo-item"><div class="item-name">Last Push :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-11-01T01:17:48.064Z"><i class="fa-solid fa-spinner fa-spin"></i></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By John Doe</div><div class="framework-info"><span>Framework </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>Theme </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="Switch Between Light And Dark Mode"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="Toggle between single-column and double-column"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="Setting"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="Back To Top"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.min.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
